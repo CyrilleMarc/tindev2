@@ -1,0 +1,132 @@
+* {
+  box-sizing: content-box;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  justify-content: center;
+}
+.usersList h1 {
+  font-size: 70px;
+  color: #6ce200;
+  text-align: center;
+  margin: 30px 0px 50px 0px;
+  padding: 0px;
+  flex: 8;
+}
+
+.EditUserList h1 {
+  font-size: 70px;
+  color: #6ce200;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+  padding: 30px 0px 0px;
+  flex: 8;
+}
+
+table {
+  margin: 5px auto;
+  width: 95%;
+}
+
+th {
+  text-align: center;
+  border: 3px solid #6ce200;
+  padding: 10px 10px;
+  font-size: 30px;
+  color:#6ce200;
+}
+
+td {
+  text-align: center;
+  border: 1px solid #6ce200;
+  padding: 10px 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.tabBtn {
+  padding: 0px;
+}
+
+.tabBtn button.delete {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: red;
+  color: red;
+  font-size: 20px;
+}
+
+.tabBtn button.edit {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: #6ce200;
+  color: #6ce200;
+  font-size: 20px;
+  margin: 0px 5px;
+}
+
+button.save {
+  width: 90%;
+  height: 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 3px solid #6ce200;
+  color: #6ce200;
+  font-size: 20px;
+  margin: 0px auto;
+}
+
+button.retour {
+  width: 90%;
+  height: 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 3px solid #6ce200;
+  font-size: 20px;
+  margin: 0px auto;
+  color: #6ce200;
+}
+
+
+.EditUserList form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0px auto;
+  font-size: 40px;
+  border: 3px solid #6ce200;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+.EditUserList form input {
+  margin: 20px auto;
+  width: 90%;
+  height: 25px;
+  font-size: 25px;
+}
+
+label{
+  color: #6ce200;
+}
+
+input{
+  background: transparent;
+  color: white;
+}
+
+.liste{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 0px;
+
+}

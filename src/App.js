@@ -1,23 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import RegisterRecruteur from "./components/RegisterRecruteur";
+import LoginRecruteur from "./components/LoginRecruteur";
+import RegisterDeveloppeur from "./components/RegisterDeveloppeur";
+import LoginDeveloppeur from "./components/LoginDeveloppeur";
+import HomePage from "./components/HomePage";
+import UsersList from "./components/UsersList";
+import EditUser from "./components/EditUser";
+import EditRecruteur from "./components/EditRecruteur";
+import QuestionnaireDeveloppeur from "./components/QuestionnaireDeveloppeur";
+import QuestionnaireRecruteur from './components/QuestionnaireRecruteur';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" 
+          element={<HomePage />}></Route>
+          <Route path="/usersList" 
+          element={<UsersList />}></Route>
+          <Route path="/edit/:id" 
+          element={<EditUser />} />
+          <Route
+            path="/editRecruteur/:id"
+            element={<EditRecruteur />}
+          ></Route>
+          <Route
+            path="/registerRecruteur"
+            element={<RegisterRecruteur />}
+          ></Route>
+          <Route path="/loginRecruteur" 
+          element={<LoginRecruteur />}></Route>
+          <Route
+            path="/registerDeveloppeur"
+            element={<RegisterDeveloppeur />}
+          ></Route>
+          <Route
+            path="/loginDeveloppeur"
+            element={<LoginDeveloppeur />}
+          ></Route>
+          <Route
+            path="/questionnaireDeveloppeur"
+            element={<QuestionnaireDeveloppeur />}
+          ></Route>
+          <Route
+            path="/questionnaireRecruteur"
+            element={<QuestionnaireRecruteur />}
+          ></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

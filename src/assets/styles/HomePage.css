@@ -1,0 +1,39 @@
+.HomePageButton{
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    margin: 5rem auto 8rem;
+}
+a button{
+    width: 100%;
+}
+.HomePageButton button{
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    height: 150px;
+    margin: 20px 0px;
+    background-color: #6ce200;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    font-size: 70px;
+    cursor: pointer;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.HomePageButton button:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .HomePageButton{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+    }
+    .HomePageButton button{
+        height: auto;
+    }
+
+  }
